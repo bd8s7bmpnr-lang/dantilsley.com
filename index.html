@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apps by Dan Tilsley — Teachin' Time, Heard, and Rock the Fox.">
+  <title>Dan Tilsley — Apps</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Skip to main content (visible only when focused) -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Fixed navigation bar -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <div class="nav__brand">
+        <span class="nav__name">Dan Tilsley</span>
+      </div>
+
+      <button
+        class="nav__toggle"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Open menu"
+      >
+        <span class="nav__hamburger" aria-hidden="true"></span>
+      </button>
+
+      <ul id="nav-menu" class="nav__menu" role="menubar">
+        <li role="none">
+          <a href="#apps" class="nav__link" role="menuitem">Apps</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main id="main-content">
+
+    <!-- Hero section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__content">
+        <h1 id="hero-heading" class="hero__headline">
+          Thoughtful apps, beautifully crafted.
+        </h1>
+        <p class="hero__subhead">
+          Focused apps designed for real people, real interests, and everyday life.
+        </p>
+        <p class="hero__attribution">
+          Created by Dan Tilsley
+        </p>
+      </div>
+
+      <!-- Three phone image placeholders (to be replaced with transparent PNGs) -->
+      <div class="hero__phones" aria-hidden="true">
+        <figure class="phone-placeholder phone-placeholder--left">
+          <div class="phone-frame phone-frame--teachin">
+            <div class="teachin-screen" aria-hidden="true">
+              <div class="teachin-status-bar">
+                <span class="teachin-time">9:41</span>
+              </div>
+              <div class="teachin-header">
+                <span class="teachin-title">Teachin' Time</span>
+              </div>
+              <div class="teachin-countdown">
+                <span class="teachin-countdown-label">End of School Year</span>
+                <span class="teachin-countdown-number">42</span>
+                <span class="teachin-countdown-sub">school days left</span>
+                <span class="teachin-countdown-date">Friday, June 26</span>
+              </div>
+              <div class="teachin-upcoming">
+                <div class="teachin-break">
+                  <span class="teachin-break-name">Spring Break</span>
+                  <span class="teachin-break-date">Mar 24</span>
+                </div>
+                <div class="teachin-break">
+                  <span class="teachin-break-name">Semester End</span>
+                  <span class="teachin-break-date">Jun 20</span>
+                </div>
+              </div>
+              <div class="teachin-bar">
+                <span class="teachin-bar-item">Home</span>
+                <span class="teachin-bar-item">Calendar</span>
+                <span class="teachin-bar-item">Settings</span>
+              </div>
+            </div>
+          </div>
+        </figure>
+        <figure class="phone-placeholder phone-placeholder--center">
+          <div class="phone-frame phone-frame--heard">
+            <div class="heard-screen" aria-hidden="true">
+              <div class="heard-status-bar">
+                <span class="heard-time">9:41</span>
+              </div>
+              <div class="heard-header">
+                <span class="heard-title">Heard</span>
+                <span class="heard-badge">Coming Soon</span>
+              </div>
+              <div class="heard-map">
+                <div class="heard-grid" aria-hidden="true"></div>
+                <span class="heard-dot heard-dot--a" aria-hidden="true"></span>
+                <span class="heard-dot heard-dot--b" aria-hidden="true"></span>
+                <span class="heard-dot heard-dot--c" aria-hidden="true"></span>
+                <div class="heard-waves" aria-hidden="true">
+                  <svg viewBox="0 0 80 80" aria-hidden="true">
+                    <circle cx="40" cy="38" r="14" fill="none" stroke="currentColor" stroke-width="0.8"/>
+                    <circle cx="40" cy="38" r="24" fill="none" stroke="currentColor" stroke-width="0.8"/>
+                    <circle cx="40" cy="38" r="34" fill="none" stroke="currentColor" stroke-width="0.8"/>
+                  </svg>
+                </div>
+                <div class="heard-pin" aria-hidden="true">
+                  <svg viewBox="0 0 24 30" aria-hidden="true">
+                    <path fill="currentColor" d="M12 0C6.48 0 2 4.03 2 9c0 5.5 5 13 10 21 5-8 10-15.5 10-21 0-4.97-4.48-9-10-9zm0 12.5c-1.93 0-3.5-1.57-3.5-3.5S10.07 5.5 12 5.5s3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="heard-card">
+                <span class="heard-card-title">Nearby activity</span>
+                <span class="heard-card-sub">APRS stations around you</span>
+              </div>
+              <div class="heard-bar">
+                <span class="heard-bar-item">Home</span>
+                <span class="heard-bar-item">Map</span>
+                <span class="heard-bar-item">Messages</span>
+                <span class="heard-bar-item">Settings</span>
+              </div>
+            </div>
+          </div>
+        </figure>
+        <figure class="phone-placeholder phone-placeholder--right">
+          <div class="phone-frame"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Featured Apps section -->
+    <section id="apps" class="apps" aria-labelledby="apps-heading">
+      <div class="apps__container">
+        <h2 id="apps-heading" class="apps__title">Featured Apps</h2>
+
+        <div class="apps__grid">
+
+          <!-- App card: Teachin' Time -->
+          <article class="app-card app-card--teachin">
+            <div class="app-card__icon" aria-hidden="true"></div>
+            <h3 class="app-card__name">Teachin' Time</h3>
+            <p class="app-card__desc">
+              A classroom management tool built for educators who value simplicity and reliability.
+            </p>
+            <!-- TODO: Replace with real App Store URL -->
+            <a href="#" class="app-card__cta" aria-label="View Teachin' Time on the App Store">
+              View on App Store
+            </a>
+          </article>
+
+          <!-- App card: Heard -->
+          <article class="app-card app-card--heard">
+            <div class="app-card__icon" aria-hidden="true"></div>
+            <h3 class="app-card__name">Heard</h3>
+            <p class="app-card__desc">
+              A new way to listen, learn, and stay informed — coming soon to the App Store.
+            </p>
+            <!-- TODO: Replace with real external webpage URL -->
+            <a href="#" class="app-card__cta" aria-label="Learn more about Heard">
+              Learn More
+            </a>
+          </article>
+
+          <!-- App card: Rock the Fox -->
+          <article class="app-card app-card--fox">
+            <div class="app-card__icon" aria-hidden="true"></div>
+            <h3 class="app-card__name">Rock the Fox</h3>
+            <p class="app-card__desc">
+              Fun, music, and a fox — a playful experience designed for all ages.
+            </p>
+            <!-- TODO: Replace with real App Store URL -->
+            <a href="#" class="app-card__cta" aria-label="View Rock the Fox on the App Store">
+              View on App Store
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">
+        &copy; <time datetime="2026">2026</time> Dan Tilsley. All rights reserved.
+      </p>
+      <!-- TODO: Replace with real App Store URLs for released apps -->
+      <ul class="site-footer__links">
+        <li><a href="#">Teachin' Time</a></li>
+        <li><a href="#">Heard</a></li>
+        <li><a href="#">Rock the Fox</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
