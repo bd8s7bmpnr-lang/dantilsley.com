@@ -3,246 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Apps by Dan Tilsley — Teachin' Time, Heard, and Rock the Fox.">
-  <title>Dan Tilsley — Apps</title>
+  <meta name="description" content="Focused iPhone, iPad, and Apple Watch apps for radio, classrooms, music programs, and real-world routines.">
+  <meta name="theme-color" content="#101114">
+  <meta property="og:title" content="Apps by Dan Tilsley">
+  <meta property="og:description" content="Independent Apple-platform apps for radio, teaching, music, and everyday work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dantilsley.com/">
+  <meta property="og:image" content="https://dantilsley.com/assets/images/promos/heard-card-promo.png">
+  <link rel="canonical" href="https://dantilsley.com/">
+  <title>Apps by Dan Tilsley</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-  <!-- Skip to main content (visible only when focused) -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- Fixed navigation bar -->
   <header class="site-header">
-    <nav class="nav" aria-label="Primary">
-      <div class="nav__brand">
-        <span class="nav__name">Dan Tilsley</span>
-      </div>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="nav__brand" href="index.html" aria-label="Apps by Dan Tilsley home">
+        <span class="nav__mark" aria-hidden="true">DT</span>
+        <span class="nav__name">Apps</span>
+      </a>
 
-      <button
-        class="nav__toggle"
-        aria-expanded="false"
-        aria-controls="nav-menu"
-        aria-label="Open menu"
-      >
-        <span class="nav__hamburger" aria-hidden="true"></span>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav__hamburger" aria-hidden="true"><span></span></span>
       </button>
 
-      <ul id="nav-menu" class="nav__menu" role="menubar">
-        <li role="none">
-          <a href="#apps" class="nav__link" role="menuitem">Apps</a>
-        </li>
+      <ul id="nav-menu" class="nav__menu" aria-hidden="false">
+        <li><a href="#apps" class="nav__link">Apps</a></li>
+        <li><a href="#approach" class="nav__link">Approach</a></li>
+        <li><a href="support/index.html" class="nav__link">Support</a></li>
+        <li><a href="privacy/index.html" class="nav__link">Privacy</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main content -->
   <main id="main-content">
-
-    <!-- Hero section -->
     <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero__content">
-        <h1 id="hero-heading" class="hero__headline">
-          Thoughtful apps, beautifully crafted.
-        </h1>
-        <p class="hero__subhead">
-          Focused apps designed for real people, real interests, and everyday life.
-        </p>
-        <p class="hero__attribution">
-          Created by Dan Tilsley
-        </p>
-      </div>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Independent Apple-platform apps</p>
+          <h1 id="hero-heading">Focused apps for real-world routines.</h1>
+          <p class="hero__summary">
+            Radio activity, school-year countdowns, music program details, and future tools built with care for the people who actually use them.
+          </p>
+          <div class="hero__actions" aria-label="Primary actions">
+            <a class="button button--primary" href="#apps">Explore the apps</a>
+            <a class="button button--secondary" href="privacy/index.html">Privacy philosophy</a>
+          </div>
+        </div>
 
-      <!-- Three phone screenshots -->
-      <div class="hero__phones">
-        <figure class="phone-placeholder phone-placeholder--left">
-          <div class="phone-frame phone-frame--teachin">
-            <img class="phone-screenshot" src="assets/images/screenshots/teachin-time-iphone.png" alt="Teachin' Time app showing teaching-day and school-break countdowns">
-          </div>
-        </figure>
-        <figure class="phone-placeholder phone-placeholder--center">
-          <div class="phone-frame phone-frame--heard">
-            <img class="phone-screenshot" src="assets/images/screenshots/heard-iphone.png" alt="Heard app showing nearby APRS stations on a map and station list">
-          </div>
-        </figure>
-        <figure class="phone-placeholder phone-placeholder--right">
-          <div class="phone-frame phone-frame--fox">
-            <img class="phone-screenshot" src="assets/images/screenshots/rock-the-fox-iphone.png" alt="Rock the Fox app home screen for the Terry Fox Secondary music program">
-          </div>
-        </figure>
+        <div class="hero__showcase" aria-label="App screenshots">
+          <figure class="phone phone--teachin">
+            <img src="assets/images/screenshots/teachin-time-iphone.png" alt="Teachin' Time showing a school countdown screen." width="420" height="910">
+          </figure>
+          <figure class="phone phone--heard">
+            <img src="assets/images/screenshots/heard-iphone.png" alt="Heard showing nearby APRS stations on a map." width="420" height="910">
+          </figure>
+          <figure class="phone phone--fox">
+            <img src="assets/images/screenshots/rock-the-fox-iphone.png" alt="Rock the Fox showing the music program home screen." width="420" height="910">
+          </figure>
+        </div>
       </div>
     </section>
 
-    <!-- Featured Apps section -->
-    <section id="apps" class="apps" aria-labelledby="apps-heading">
-      <div class="apps__container">
-        <h2 id="apps-heading" class="apps__title">Featured Apps</h2>
+    <section id="apps" class="featured-app" aria-labelledby="featured-heading">
+      <div class="section-shell featured-app__layout">
+        <a class="featured-app__media" href="heard/index.html" aria-label="Learn more about Heard">
+          <img src="assets/images/promos/heard-card-promo.png" alt="Heard promotional artwork with the app interface and APRS activity." width="1672" height="941" loading="lazy">
+        </a>
+        <div class="featured-app__copy">
+          <div class="app-heading">
+            <img class="app-heading__icon" src="assets/images/icons/heard-icon.png" alt="" width="96" height="96" aria-hidden="true">
+            <div>
+              <p class="eyebrow">Featured app</p>
+              <h2 id="featured-heading">Heard</h2>
+            </div>
+          </div>
+          <p class="lead">
+            A modern APRS companion for seeing real-time radio activity nearby, built around fast maps, clear station details, and field-ready context.
+          </p>
+          <ul class="feature-list" aria-label="Heard highlights">
+            <li>Live APRS activity around you</li>
+            <li>Station details without desktop-era clutter</li>
+            <li>A dedicated product site as the benchmark for future apps</li>
+          </ul>
+          <div class="inline-actions">
+            <a class="text-link" href="heard/index.html">Explore Heard</a>
+            <a class="text-link" href="https://bd8s7bmpnr-lang.github.io/Heard-website/">Current Heard site</a>
+            <span class="status-pill">Coming soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="apps__grid">
+    <section class="app-index" aria-labelledby="apps-heading">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">App family</p>
+          <h2 id="apps-heading">Each app gets its own job, page, and support path.</h2>
+        </div>
 
-          <!-- App card: Teachin' Time -->
+        <div class="app-grid">
           <article class="app-card app-card--teachin">
-            <img class="app-card__icon" src="assets/images/icons/teachin-time-icon.png" alt="" aria-hidden="true">
-            <h3 class="app-card__name">Teachin' Time</h3>
-            <span class="app-card__category">TEACHER COUNTDOWN</span>
-            <p class="app-card__desc">
-              School calendars, countdowns, and teacher-focused tools designed for the school year.
-            </p>
-            <ul class="app-card__features">
-              <li class="app-card__feature">
-                <svg class="app-card__check" viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-                <span>School-calendar aware</span>
-              </li>
-              <li class="app-card__feature">
-                <svg class="app-card__check" viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-                <span>Custom dates and exclusions</span>
-              </li>
-              <li class="app-card__feature">
-                <svg class="app-card__check" viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-                <span>Widgets and Apple Watch</span>
-              </li>
-              <li class="app-card__feature">
-                <svg class="app-card__check" viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-                <span>iPhone, iPad, and Apple Watch</span>
-              </li>
-            </ul>
-            <img class="app-card__preview" src="assets/images/promos/teachin-time-card-promo.png" alt="Teachin' Time promotional artwork featuring the real app icon and teacher countdown screen." aria-hidden="true">
-            <a href="https://apps.apple.com/ca/app/teachin-time/id6686394465" class="app-card__cta" aria-label="Learn more about Teachin' Time">
-              Learn more →
-            </a>
-            <a href="https://apps.apple.com/ca/app/teachin-time/id6686394465" class="app-card__cta-secondary" aria-label="View Teachin' Time on the App Store">
-              View on App Store
-            </a>
+            <img class="app-card__icon" src="assets/images/icons/teachin-time-icon.png" alt="" width="96" height="96" aria-hidden="true">
+            <a href="teachin-time/index.html"><img class="app-card__image" src="assets/images/promos/teachin-time-card-promo.png" alt="Teachin' Time promotional artwork." width="1672" height="941" loading="lazy"></a>
+            <div class="app-card__body">
+              <p class="app-card__category">Teacher countdown</p>
+              <h3>Teachin' Time</h3>
+              <p>Calendars, countdowns, widgets, and Apple Watch tools designed around the rhythm of the school year.</p>
+              <div class="app-card__links">
+                <a href="teachin-time/index.html">Product page</a>
+                <a href="https://apps.apple.com/ca/app/teachin-time/id6686394465">App Store</a>
+                <a href="teachin-time/support/index.html">Support</a>
+              </div>
+            </div>
           </article>
 
-          <!-- App card: Heard -->
-          <article class="app-card app-card--heard">
-            <img class="app-card__icon" src="assets/images/icons/heard-icon.png" alt="" aria-hidden="true">
-            <h3 class="app-card__name">Heard</h3>
-            <span class="app-card__category">APRS FOR IPHONE</span>
-            <p class="app-card__desc">
-              Real-time APRS activity around you. Know what's happening. Stay connected.
-            </p>
-            <ul class="app-card__features">
-              <li class="app-card__feature">
-                <svg class="app-card__check" viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-                <span>Live APRS activity nearby</span>
-              </li>
-              <li class="app-card__feature">
-                <svg class="app-card__check" viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-                <span>Station details and tracking</span>
-              </li>
-              <li class="app-card__feature">
-                <svg class="app-card__check" viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-                <span>Messages and notifications</span>
-              </li>
-              <li class="app-card__feature">
-                <svg class="app-card__check" viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-                <span>Designed for clarity on the go</span>
-              </li>
-            </ul>
-            <img class="app-card__preview app-card__preview--promoted" src="assets/images/promos/heard-card-promo.png" alt="Heard promotional artwork showing the app, a glowing Earth horizon, and APRS location activity." aria-hidden="true">
-            <a href="https://bd8s7bmpnr-lang.github.io/Heard-website/" class="app-card__cta" aria-label="Learn more about Heard">
-              Learn more →
-            </a>
-            <span class="app-card__status">Coming Soon</span>
-          </article>
-
-          <!-- App card: Rock the Fox -->
           <article class="app-card app-card--fox">
-            <img class="app-card__icon" src="assets/images/icons/rock-the-fox-icon.png" alt="" aria-hidden="true">
-            <h3 class="app-card__name">Rock the Fox</h3>
-            <span class="app-card__category">TERRY FOX SECONDARY MUSIC</span>
-            <p class="app-card__desc">
-              The companion app for Terry Fox Secondary's music community.
-            </p>
-            <ul class="app-card__features">
-              <li class="app-card__feature">
-                <svg class="app-card__check" viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-                <span>Upcoming events and reminders</span>
-              </li>
-              <li class="app-card__feature">
-                <svg class="app-card__check" viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-                <span>Band info and rehearsals</span>
-              </li>
-              <li class="app-card__feature">
-                <svg class="app-card__check" viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-                <span>Resources for students</span>
-              </li>
-              <li class="app-card__feature">
-                <svg class="app-card__check" viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-                <span>Built for our community</span>
-              </li>
-            </ul>
-            <img class="app-card__preview" src="assets/images/promos/rock-the-fox-card-promo.png" alt="Rock the Fox promotional artwork featuring the real app icon and music-program screen." aria-hidden="true">
-            <a href="https://apps.apple.com/ca/app/rock-the-fox/id1520500468" class="app-card__cta" aria-label="Learn more about Rock the Fox">
-              Learn more →
-            </a>
-            <a href="https://apps.apple.com/ca/app/rock-the-fox/id1520500468" class="app-card__cta-secondary" aria-label="View Rock the Fox on the App Store">
-              View on App Store
-            </a>
+            <img class="app-card__icon" src="assets/images/icons/rock-the-fox-icon.png" alt="" width="96" height="96" aria-hidden="true">
+            <a href="rock-the-fox/index.html"><img class="app-card__image" src="assets/images/promos/rock-the-fox-card-promo.png" alt="Rock the Fox promotional artwork." width="1672" height="941" loading="lazy"></a>
+            <div class="app-card__body">
+              <p class="app-card__category">Music community</p>
+              <h3>Rock the Fox</h3>
+              <p>A companion app for Terry Fox Secondary's music program, built for announcements, events, and student resources.</p>
+              <div class="app-card__links">
+                <a href="rock-the-fox/index.html">Product page</a>
+                <a href="https://apps.apple.com/ca/app/rock-the-fox/id1520500468">App Store</a>
+                <a href="rock-the-fox/support/index.html">Support</a>
+              </div>
+            </div>
           </article>
 
+          <article class="app-card app-card--future">
+            <div class="future-mark" aria-hidden="true">+</div>
+            <div class="app-card__body">
+              <p class="app-card__category">Future projects</p>
+              <h3>Room for what comes next</h3>
+              <p>New apps can join the same system: a focused product page, a clear support route, and a policy that explains privacy in plain language.</p>
+              <div class="app-card__links">
+                <a href="support/index.html">Support hub</a>
+                <a href="privacy/index.html">Privacy hub</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Trust strip -->
-    <section class="trust-strip" aria-labelledby="trust-heading">
-      <div class="trust-strip__container">
-        <h2 id="trust-heading" class="trust-strip__title">Why these apps feel different</h2>
-        <div class="trust-strip__grid">
-
-          <div class="trust-strip__item">
-            <svg class="trust-strip__icon trust-strip__icon--gold" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M12 3l2.14 4.6 5.07.74-3.67 3.57.86 5.09L12 14.77l-4.4 2.23.86-5.09L4.79 8.34l5.07-.74z"/>
-            </svg>
-            <h3 class="trust-strip__item-title">Built from real life</h3>
-            <p class="trust-strip__item-desc">Every app starts with a real problem — from teaching and music to radio.</p>
-          </div>
-
-          <div class="trust-strip__item">
-            <svg class="trust-strip__icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-              <line x1="12" y1="18" x2="12" y2="18.01"/>
-            </svg>
-            <h3 class="trust-strip__item-title">Made for Apple</h3>
-            <p class="trust-strip__item-desc">Designed to feel at home on iPhone, iPad, and Apple Watch.</p>
-          </div>
-
-          <div class="trust-strip__item">
-            <svg class="trust-strip__icon trust-strip__icon--blue" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-            </svg>
-            <h3 class="trust-strip__item-title">Privacy first</h3>
-            <p class="trust-strip__item-desc">Your data is yours. No tracking. Just apps that work.</p>
-          </div>
-
-          <div class="trust-strip__item">
-            <svg class="trust-strip__icon trust-strip__icon--red" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-            </svg>
-            <h3 class="trust-strip__item-title">Continuous care</h3>
-            <p class="trust-strip__item-desc">Apps I use myself and continue improving over time.</p>
-          </div>
-
+    <section id="approach" class="approach" aria-labelledby="approach-heading">
+      <div class="section-shell approach__layout">
+        <div class="section-heading section-heading--left">
+          <p class="eyebrow">Approach</p>
+          <h2 id="approach-heading">A hub for related apps, not a generic portfolio.</h2>
+        </div>
+        <div class="approach__grid">
+          <article>
+            <h3>App-first</h3>
+            <p>The homepage introduces the family. Each app page can carry its own audience, screenshots, support details, and App Store path.</p>
+          </article>
+          <article>
+            <h3>Personal context</h3>
+            <p>The apps come from teaching, music, radio, and daily use, but the site keeps that context in service of the products.</p>
+          </article>
+          <article>
+            <h3>Privacy-aware</h3>
+            <p>The privacy hub gathers the philosophy, while each app keeps a specific policy close to its product page.</p>
+          </article>
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="site-footer__inner">
-      <p class="site-footer__copy">
-        &copy; <time datetime="2026">2026</time> Dan Tilsley. All rights reserved.
-      </p>
+      <p>&copy; <time datetime="2026">2026</time> Dan Tilsley</p>
       <ul class="site-footer__links">
-        <li><a href="https://apps.apple.com/ca/app/teachin-time/id6686394465">Teachin' Time</a></li>
-        <li><a href="https://bd8s7bmpnr-lang.github.io/Heard-website/">Heard</a></li>
-        <li><a href="https://apps.apple.com/ca/app/rock-the-fox/id1520500468">Rock the Fox</a></li>
+        <li><a href="heard/index.html">Heard</a></li>
+        <li><a href="teachin-time/index.html">Teachin' Time</a></li>
+        <li><a href="rock-the-fox/index.html">Rock the Fox</a></li>
+        <li><a href="support/index.html">Support</a></li>
+        <li><a href="privacy/index.html">Privacy</a></li>
       </ul>
     </div>
   </footer>

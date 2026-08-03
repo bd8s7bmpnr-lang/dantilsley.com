@@ -1,60 +1,52 @@
-/* ==========================================================================
-   dantilsley.com — Navigation Script (Milestone 1)
-   ========================================================================== */
-
 (function () {
   "use strict";
 
-  var toggle  = document.querySelector(".nav__toggle");
-  var menu    = document.querySelector(".nav__menu");
-  var links   = menu ? menu.querySelectorAll(".nav__link") : [];
+  var toggle = document.querySelector(".nav__toggle");
+  var menu = document.querySelector(".nav__menu");
 
-  if (!toggle || !menu) return;
-
-  /**
-   * Open the mobile menu.
-   */
-  function openMenu() {
-    toggle.setAttribute("aria-expanded", "true");
-    toggle.setAttribute("aria-label", "Close menu");
-    menu.setAttribute("aria-hidden", "false");
+  if (!toggle || !menu) {
+    return;
   }
 
-  /**
-   * Close the mobile menu.
-   */
-  function closeMenu() {
-    toggle.setAttribute("aria-expanded", "false");
-    toggle.setAttribute("aria-label", "Open menu");
-    menu.setAttribute("aria-hidden", "true");
+  function setMenu(open) {
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    menu.setAttribute("aria-hidden", String(!open));
+    document.body.classList.toggle("nav-open", open);
   }
 
-  /**
-   * Toggle the mobile menu open/closed.
-   */
-  function toggleMenu() {
-    var isExpanded = toggle.getAttribute("aria-expanded") === "true";
-    if (isExpanded) {
-      closeMenu();
+  function isMobileMenu() {
+    return window.matchMedia("(max-width: 760px)").matches;
+  }
+
+  function syncMenuForViewport() {
+    if (isMobileMenu()) {
+      setMenu(false);
     } else {
-      openMenu();
+      menu.setAttribute("aria-hidden", "false");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open menu");
+      document.body.classList.remove("nav-open");
     }
   }
 
-  // Hamburger button click
-  toggle.addEventListener("click", toggleMenu);
+  toggle.addEventListener("click", function () {
+    setMenu(toggle.getAttribute("aria-expanded") !== "true");
+  });
 
-  // Close when a menu link is activated
-  for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", closeMenu);
-  }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest("a") && isMobileMenu()) {
+      setMenu(false);
+    }
+  });
 
-  // Escape key closes the menu
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && menu.getAttribute("aria-hidden") === "false") {
-      closeMenu();
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+      setMenu(false);
       toggle.focus();
     }
   });
 
+  window.addEventListener("resize", syncMenuForViewport);
+  syncMenuForViewport();
 })();
