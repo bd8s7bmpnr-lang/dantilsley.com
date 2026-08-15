@@ -1,0 +1,23 @@
+{
+  "name": "Heard - APRS, made clear.",
+  "short_name": "Heard",
+  "description": "Live APRS maps, station tracking, callsign details, and optional local directories for iPhone.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#050916",
+  "theme_color": "#050916",
+  "categories": ["utilities", "navigation"],
+  "icons": [
+    {
+      "src": "./Assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./Assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

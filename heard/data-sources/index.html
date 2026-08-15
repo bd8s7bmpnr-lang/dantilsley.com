@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add('js')</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Data Sources & Acknowledgements — Heard</title>
+  <meta name="description" content="Data sources and acknowledgements for Heard, including APRS-IS, FCC ULS, ISED Canadian amateur radio data, QRZ lookup, and Apple Maps.">
+  <meta name="theme-color" content="#050916">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Data Sources & Acknowledgements — Heard">
+  <meta property="og:description" content="How Heard uses APRS-IS, FCC ULS, ISED Canadian amateur radio data, QRZ lookup, and map services.">
+  <meta property="og:url" content="https://dantilsley.com/heard/data-sources/">
+  <meta property="og:image" content="https://dantilsley.com/heard/Assets/og-heard.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Heard">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dantilsley.com/heard/Assets/og-heard.jpg">
+  <link rel="canonical" href="https://dantilsley.com/heard/data-sources/">
+  <link rel="icon" href="../Assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="../Assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="../"><img src="../Assets/icon-512.png" alt=""><span>Heard<small>by Ghost Wind Software</small></span></a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation">☰</button><div class="nav-links" id="main-navigation"><a href="../../">All Apps</a><a href="../#features">Features</a><a href="../#screenshots">Screenshots</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="../data-sources/" aria-current="page">Data Sources</a><a class="nav-cta" href="../#download">App Store</a></div></nav></header>
+<main id="main">
+  <section class="page-hero"><div class="narrow"><p class="eyebrow">Heard for iPhone</p><h1>Data Sources & Acknowledgements</h1><p>Where Heard’s live APRS information, optional callsign records, map content, and external lookups come from, and what is stored locally.</p><span class="page-meta">Last reviewed August 1, 2026 · Data Sources URL: /heard/data-sources/</span></div></section>
+  <section class="prose"><div class="narrow"><div class="prose-card">
+    <div class="notice">Heard combines live APRS traffic with optional reference data. A directory registration location is not a station’s live APRS position, and neither should be treated as proof of a person’s current location.</div>
+    <div class="source-grid">
+      <article class="source-card"><span class="source-label">Live network</span><h2>APRS-IS</h2><p>Heard connects to APRS-IS to receive public APRS packets for the listening area selected by the user. APRS-IS is a community-operated internet system that interconnects APRS gateways and servers.</p><p>Heard uses APRS-IS packets to populate the map, station list, station detail views, movement trails, message views, and connection diagnostics. Packet availability, accuracy, routing, and retention are controlled by transmitting stations and the broader APRS network, not by Ghost Wind Software.</p></article>
+      <article class="source-card"><span class="source-label">United States directory</span><h2>FCC Universal Licensing System</h2><p>Optional U.S. amateur callsign information is derived from public FCC Universal Licensing System data. Heard uses this data to show locally searchable callsign and licence context when the user installs the U.S. directory.</p><p>After installation, Heard stores the local fields needed by the app, such as callsign, name, entity type, city, state, operator class or qualification when available, source date, record count, and storage status.</p></article>
+      <article class="source-card"><span class="source-label">Canadian directory</span><h2>ISED Canadian amateur radio data</h2><p>Optional Canadian amateur callsign information is derived from public data provided by Innovation, Science and Economic Development Canada. Heard uses this data to enrich station details and local callsign searches when the Canadian directory is installed.</p><p>The source provider controls availability of the download. Heard treats the Canadian directory as optional and allows users to retry updates or remove the local copy when needed.</p></article>
+      <article class="source-card"><span class="source-label">External lookup</span><h2>QRZ</h2><p>Heard can open callsign pages on QRZ in an in-app browser when a user chooses the QRZ action. QRZ is not bundled as a local directory in Heard, and Heard does not represent QRZ or guarantee its content, availability, account behavior, or privacy practices.</p></article>
+      <article class="source-card"><span class="source-label">Map content</span><h2>Apple Maps</h2><p>Maps, place labels, imagery, and related cartographic content are provided through Apple MapKit. Heard uses map content to display APRS stations, listening areas, and nearby geographic context.</p></article>
+      <article class="source-card"><span class="source-label">Attribution</span><h2>Independent product</h2><p>Heard and Ghost Wind Software are not affiliated with or endorsed by APRS-IS, the FCC, ISED, QRZ, Apple, or individual amateur-radio operators whose public station data appears in the app.</p></article>
+    </div>
+
+    <h2>What is stored locally</h2>
+    <p>Live APRS activity, app settings, selected listening areas, and optional directory records may be stored on the device so Heard can display recent activity, search installed directories, and preserve user preferences. Optional FCC and ISED directories can be removed from Settings.</p>
+
+    <h2>Accuracy and responsible use</h2>
+    <p>Public radio and licensing data can be delayed, incomplete, inaccurate, stale, or intentionally approximate. Station symbols and descriptions are supplied through APRS and may not always describe a station perfectly. Heard should be used as an exploratory amateur-radio tool, not for emergency response, surveillance, navigation, or decisions where precise identity or location is required.</p>
+
+    <h2>Corrections</h2>
+    <p>Ghost Wind Software cannot directly alter government licensing records, QRZ pages, map content, or APRS packets transmitted by other stations. Questions about a source record should be directed to the organization that maintains that source. Product display issues can be reported to <a href="mailto:support@ghostwind.app?subject=Heard%20Data%20Source">support@ghostwind.app</a>.</p>
+  </div></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="../Assets/icon-512.png" alt=""><div><strong>Heard</strong><span>Thoughtfully built for the amateur radio community.</span></div></div><div class="footer-links"><a href="../../">All Apps</a><a href="../privacy/">Privacy</a><a href="../support/">Support</a><a href="../data-sources/">Data Sources</a><a href="mailto:support@ghostwind.app">Contact</a></div><div class="footer-note">© <span data-year>2026</span> Ghost Wind Software. Heard is not affiliated with or endorsed by APRS-IS, the FCC, ISED, QRZ, or Apple. Amateur radio and APRS data may be publicly transmitted and received.</div></div></footer>
+<script src="../js/main.js" defer></script>
+</body>
+</html>

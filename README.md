@@ -5,11 +5,11 @@ Static home for Dan Tilsley's Apple-platform apps.
 ## Current Scope
 
 - App-first homepage for Heard, Teachin' Time, Rock the Fox, and future projects
-- Product pages at `/heard/`, `/teachin-time/`, and `/rock-the-fox/`
+- Product sites at `/heard/`, `/teachin-time/`, and `/rock-the-fox/`
 - Shared support hub at `/support/`
 - Shared privacy hub at `/privacy/`
 - App-specific support and privacy pages for Teachin' Time and Rock the Fox
-- Heard currently links through to its existing standalone site while the main domain becomes the app hub
+- Complete Heard product site at `/heard/`, including support, privacy, and data-source pages
 
 ## Tech
 
