@@ -795,6 +795,22 @@ button {
   color: var(--text-muted);
 }
 
+.approach__grid article {
+  min-height: 0;
+  justify-content: flex-start;
+  padding: 20px 0 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.approach__grid h3 {
+  font-size: clamp(1.15rem, 1.5vw, 1.4rem);
+  line-height: 1.2;
+}
+
 .product-hero {
   min-height: min(760px, 100svh);
   padding: calc(var(--nav-height) + 46px) 0 56px;
