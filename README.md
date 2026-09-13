@@ -8,7 +8,8 @@ Static home for Dan Tilsley's Apple-platform apps.
 - Product sites at `/heard/`, `/teachin-time/`, and `/rock-the-fox/`
 - Shared support hub at `/support/`
 - Shared privacy hub at `/privacy/`
-- App-specific support and privacy pages for Teachin' Time and Rock the Fox
+- Complete Teachin’ Time product site: overview, features, school calendars, little breaks, support and privacy
+- App-specific support and privacy pages for Rock the Fox
 - Complete Heard product site at `/heard/`, including support, privacy, and data-source pages
 
 ## Tech
@@ -29,4 +30,6 @@ Opening `index.html` directly works for the homepage, but local routing is more 
 
 ## Deployment
 
-No production host is configured in this repository yet. The site is intended to remain deployable as static files on GitHub Pages, Hover-backed hosting, or another static host.
+GitHub Pages publishes the root of `main` to https://dantilsley.com/.
+
+Teachin’ Time uses its own stylesheet and script under `/teachin-time/`. Serve the repository root for local previews, since its asset and navigation links are root-relative. Version 3.0 is marked as coming soon until its App Store release is confirmed.
