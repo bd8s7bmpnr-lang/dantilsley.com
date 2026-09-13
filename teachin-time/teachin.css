@@ -1,0 +1,17 @@
+/* Teachin’ Time: scoped additions to the existing site design. */
+.teachin-document .page-copy { gap: 2.75rem; }
+.teachin-document .page-copy section { display: grid; gap: 1rem; scroll-margin-top: 5rem; }
+.teachin-document .page-copy p { font-size: 1rem; line-height: 1.75; }
+.teachin-document .page-copy a, .contact-address a { text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }
+.teachin-document .page-hero .button--secondary { color: #fff; border-color: #aaa; }
+.teachin-document .page-copy h2 { font-size: clamp(1.5rem, 4vw, 2rem); line-height: 1.2; }
+.teachin-document details { border-bottom: 1px solid var(--line); padding: 1.15rem 0; }
+.teachin-document summary { font-size: 1.1rem; font-weight: 650; cursor: pointer; }
+.teachin-document details p { margin-top: .9rem; }
+.teachin-document .policy-date, .teachin-document .contact-address { font-size: 1rem; }
+.teachin-document a:focus-visible, .teachin-document summary:focus-visible { outline: 3px solid #9462df; outline-offset: 5px; }
+.product-page--teachin figcaption { padding-top: 1rem; font-size: .875rem; line-height: 1.5; color: #c8c5d0; max-width: 24rem; }
+.product-page--teachin .teachin-features { margin-top: 2rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.product-page--teachin .teachin-features h3 { font-size: 1.4rem; margin-bottom: .7rem; }
+.product-page--teachin .release-note { margin-top: 1.3rem; color: var(--text-muted); max-width: 52rem; }
+@media(max-width: 760px) { .product-page--teachin .teachin-features { grid-template-columns: 1fr; } .teachin-document .page-hero h1 { font-size: clamp(2.3rem, 10vw, 4rem); } }
