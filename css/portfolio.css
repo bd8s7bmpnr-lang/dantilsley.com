@@ -197,3 +197,14 @@ html.portfolio-dark {
   .featured-showcase__choices { gap: 3px; }
   .featured-showcase__choices button { font-size: .75rem; padding-inline: 10px; gap: 6px; }
 }
+
+/* Complete the app-family row with Heard's blue identity. */
+.portfolio-dark .app-card--heard { border-color: #7dbbf23b; }
+.portfolio-dark .app-card--heard .app-card__category,
+.portfolio-dark .app-card--heard .app-card__links a { color: var(--blue); }
+.heard-card-art { background: radial-gradient(ellipse at 85% 100%, #175a96 0%, transparent 65%), #071322; }
+.heard-card-art::before { border-color: #70caff60; box-shadow: 0 0 22px #309dff25; }
+.heard-card-art .teachin-card-art__headline > span { color: #8fc9ff; }
+.heard-card-art .teachin-card-art__poster { border: 0; border-radius: 0; box-shadow: none; }
+.heard-card-art:focus-visible { outline-color: #8fc9ff; }
+@media (prefers-reduced-motion: reduce) { .heard-card-art .teachin-card-art__poster { transition: none; } }
