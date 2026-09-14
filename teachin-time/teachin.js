@@ -23,7 +23,7 @@
   }
   const dialog = document.querySelector('.image-dialog');
   if (!dialog || typeof dialog.showModal !== 'function') return;
-  document.querySelectorAll('.feature-art .poster, .ipad-art .poster').forEach(img => {
+  document.querySelectorAll('.feature-art .poster, .ipad-art .poster, .watch-art .poster').forEach(img => {
     const button = document.createElement('button');
     button.type='button'; button.className='gallery-button';
     button.setAttribute('aria-label','Enlarge: '+img.alt);
