@@ -140,3 +140,11 @@ html.portfolio-dark {
   .portfolio-dark .policy-card { padding: 25px; }
   .portfolio-dark .featured-app__layout { gap: 35px; }
 }
+
+/* Match the adjacent app card; keep the icon, headline and poster separate. */
+.fox-card-art { background: radial-gradient(ellipse at 85% 100%, #7d1830 0%, transparent 65%), #0d090d; }
+.fox-card-art::before { border-color: #ff758460; box-shadow: 0 0 22px #ff405b25; }
+.fox-card-art .teachin-card-art__headline > span { color: #ff8c9c; }
+.fox-card-art .teachin-card-art__poster { border-color: #ff758430; }
+.fox-card-art:focus-visible { outline-color: #ff8c9c; }
+@media (prefers-reduced-motion: reduce) { .fox-card-art .teachin-card-art__poster { transition: none; } }
