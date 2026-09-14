@@ -266,8 +266,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #d8
 
 /* Apple Watch: campaign artwork paired with the iPhone and iPad showcase. */
 .watch-showcase{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:center}
-.watch-art{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:center;min-width:0}
-.watch-art .poster{width:100%;border-radius:20px}
-.watch-art .gallery-button{width:100%;min-width:0}
-@media(max-width:1000px){.watch-showcase{grid-template-columns:1fr}.watch-art{width:min(100%,640px);margin-inline:auto}}
-@media(max-width:480px){.watch-art{grid-template-columns:1fr;width:min(100%,320px);gap:24px}.watch-art .poster{border-radius:18px}}
+.watch-art{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:center;justify-items:center;min-width:0;width:min(100%,576px);margin-inline:auto}
+.watch-art .poster{width:100%;max-width:280px;border-radius:20px}
+.watch-art .gallery-button{width:100%;max-width:280px;min-width:0}
+@media(max-width:1000px){.watch-showcase{grid-template-columns:1fr}.watch-art{width:min(100%,576px);margin-inline:auto}}
+@media(max-width:480px){.watch-art{grid-template-columns:1fr;width:min(100%,280px);gap:24px}.watch-art .poster{border-radius:18px}}
