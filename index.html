@@ -13,7 +13,7 @@
   <link rel="canonical" href="https://dantilsley.com/">
   <title>Apps by Dan Tilsley</title>
   <link rel="stylesheet" href="css/main.css?v=20260913-teachin-card">
-  <link rel="stylesheet" href="css/portfolio.css?v=20260913-fox-card">
+  <link rel="stylesheet" href="css/portfolio.css?v=20260913-featured-apps">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -67,31 +67,53 @@
       </div>
     </section>
 
-    <section id="apps" class="featured-app" aria-labelledby="featured-heading">
-      <div class="section-shell featured-app__layout">
-        <a class="featured-app__media" href="heard/index.html" aria-label="Learn more about Heard">
-          <img src="assets/images/promos/heard-card-promo.png" alt="Heard promotional artwork with the app interface and APRS activity." width="1672" height="941" loading="lazy">
-        </a>
-        <div class="featured-app__copy">
-          <div class="app-heading">
-            <img class="app-heading__icon" src="assets/images/icons/heard-icon.png" alt="" width="96" height="96" aria-hidden="true">
-            <div>
-              <p class="eyebrow">Featured app</p>
-              <h2 id="featured-heading">Heard</h2>
-            </div>
-          </div>
-          <p class="lead">
-            A modern APRS companion for seeing real-time radio activity nearby, built around fast maps, clear station details, and field-ready context.
-          </p>
-          <ul class="feature-list" aria-label="Heard highlights">
-            <li>Live APRS activity around you</li>
-            <li>Station details without desktop-era clutter</li>
-            <li>Built for quick checks at home or in the field</li>
-          </ul>
-          <div class="inline-actions">
-            <a class="button button--dark" href="heard/">Visit Heard</a>
+    <section id="apps" class="featured-showcase" aria-labelledby="featured-heading" aria-roledescription="carousel">
+      <div class="section-shell">
+        <div class="featured-showcase__heading">
+          <div><p class="eyebrow">Discover the app family</p><h2 id="featured-heading">Three apps. Their own world.</h2></div>
+          <div class="featured-showcase__arrows" aria-label="Featured app controls">
+            <button type="button" data-feature-prev aria-label="Previous featured app" aria-controls="featured-track" disabled>←</button>
+            <button type="button" data-feature-next aria-label="Next featured app" aria-controls="featured-track">→</button>
           </div>
         </div>
+        <div class="featured-showcase__choices" aria-label="Choose a featured app">
+          <button type="button" data-feature-index="0" aria-controls="feature-heard" aria-current="true"><span class="feature-dot feature-dot--heard" aria-hidden="true"></span>Heard</button>
+          <button type="button" data-feature-index="1" aria-controls="feature-teachin-time"><span class="feature-dot feature-dot--teachin-time" aria-hidden="true"></span>Teachin’ Time</button>
+          <button type="button" data-feature-index="2" aria-controls="feature-rock-the-fox"><span class="feature-dot feature-dot--rock-the-fox" aria-hidden="true"></span>Rock the Fox</button>
+        </div>
+        <div id="featured-track" class="featured-showcase__track" tabindex="0" aria-label="Featured apps; scroll horizontally or use the app buttons">
+          <article id="feature-heard" class="feature-panel feature-panel--heard" aria-labelledby="title-heard" aria-roledescription="slide" aria-label="1 of 3">
+            <a class="feature-art" href="heard/" aria-label="Explore Heard"><img class="feature-art__devices" src="heard/assets/renders/hero-devices.svg" alt="Three iPhones showing Heard’s real map, listening, and tracking screens." width="1040" height="980" loading="lazy"></a>
+            <div class="feature-panel__copy">
+              <div class="feature-panel__brand"><img src="assets/images/icons/heard-icon.png" alt="" width="56" height="56" loading="lazy"><div><p>Heard</p><small>APRS, made clear.</small></div></div>
+              <h3 id="title-heard">A clearer view.<br><span>Of the world on air.</span></h3>
+              <p class="feature-panel__summary">See live amateur radio activity on a clear map, discover nearby stations, and follow movement as new APRS reports arrive.</p>
+              <ul class="feature-panel__list"><li>Live APRS maps and station details</li><li>Tracking and context at a glance</li><li>Made for quick checks, wherever you are</li></ul>
+              <a class="button feature-panel__visit" href="heard/">Explore Heard <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article id="feature-teachin-time" class="feature-panel feature-panel--teachin-time" aria-labelledby="title-teachin-time" aria-roledescription="slide" aria-label="2 of 3">
+            <a class="feature-art" href="teachin-time/" aria-label="Explore Teachin’ Time"><img class="feature-art__poster feature-art__poster--back" src="teachin-time/assets/03-custom-countdowns-poster.jpg" alt="Teachin’ Time personal milestone countdowns." width="828" height="1800" loading="lazy"><img class="feature-art__poster feature-art__poster--front" src="teachin-time/assets/01-dashboard-poster.jpg" alt="Teachin’ Time school-year dashboard and teaching days remaining." width="828" height="1800" loading="lazy"></a>
+            <div class="feature-panel__copy">
+              <div class="feature-panel__brand"><img src="assets/images/icons/teachin-time-icon.png" alt="" width="56" height="56" loading="lazy"><div><p>Teachin’ Time</p><small>A little perspective for your school year.</small></div></div>
+              <h3 id="title-teachin-time">Your school year.<br><span>At a glance.</span></h3>
+              <p class="feature-panel__summary">The days ahead. The breaks you’re looking forward to. Bring your teaching-day countdowns, school calendar, and personal milestones together.</p>
+              <ul class="feature-panel__list"><li>Teaching days and school breaks</li><li>Calendars and personal countdowns</li><li>A little perspective on iPhone, iPad, and Apple Watch</li></ul>
+              <a class="button feature-panel__visit" href="teachin-time/">Explore Teachin’ Time <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article id="feature-rock-the-fox" class="feature-panel feature-panel--rock-the-fox" aria-labelledby="title-rock-the-fox" aria-roledescription="slide" aria-label="3 of 3">
+            <a class="feature-art" href="rock-the-fox/" aria-label="Explore Rock the Fox"><img class="feature-art__poster feature-art__poster--back" src="rock-the-fox/assets/02-gallery.webp" alt="Rock the Fox concert photo gallery." width="900" height="1955" loading="lazy"><img class="feature-art__poster feature-art__poster--front" src="rock-the-fox/assets/01-watch.webp" alt="Rock the Fox performance playback and setlist." width="900" height="1955" loading="lazy"></a>
+            <div class="feature-panel__copy">
+              <div class="feature-panel__brand"><img src="assets/images/icons/rock-the-fox-icon.png" alt="" width="56" height="56" loading="lazy"><div><p>Rock the Fox</p><small>The music. The people. The moments.</small></div></div>
+              <h3 id="title-rock-the-fox">The stage.<br><span>In your pocket.</span></h3>
+              <p class="feature-panel__summary">Watch Rock the Fox performances, discover Terry Fox Secondary’s music programs, and relive concert moments in the photo gallery.</p>
+              <ul class="feature-panel__list"><li>Performances worth watching again</li><li>Explore our music programs</li><li>Big nights and lasting memories</li></ul>
+              <a class="button feature-panel__visit" href="rock-the-fox/">Explore Rock the Fox <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="featured-showcase__position" aria-live="polite" aria-atomic="true">01 / 03 · Heard</p>
       </div>
     </section>
 
@@ -194,5 +216,6 @@
   </footer>
 
   <script src="js/main.js" defer></script>
+  <script src="js/featured.js?v=20260913-featured-apps" defer></script>
 </body>
 </html>
