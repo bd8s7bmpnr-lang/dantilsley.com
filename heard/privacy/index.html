@@ -27,7 +27,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="../"><img src="../Assets/icon-512.png" alt=""><span>Heard<small>APRS, made clear.</small></span></a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation">☰</button><div class="nav-links" id="main-navigation"><a href="../../">All Apps</a><a href="../#features">Features</a><a href="../#screenshots">Screenshots</a><a href="../support/">Support</a><a href="../privacy/" aria-current="page">Privacy</a><a href="../data-sources/">Data Sources</a><a class="nav-cta" href="../#download">App Store</a></div></nav></header>
 <main id="main">
-  <section class="page-hero"><div class="narrow"><p class="eyebrow">Heard for iPhone</p><h1>Privacy Policy</h1><p>A plain-language explanation of how Heard uses APRS network data, optional location, local settings, optional callsign directories, and external services.</p><span class="page-meta">Effective August 1, 2026 · Privacy Policy URL: /heard/privacy/</span></div></section>
+  <section class="page-hero"><div class="narrow"><p class="eyebrow">Heard for iPhone</p><h1>Privacy Policy</h1><p>A plain-language explanation of how Heard uses APRS network data, optional location, local settings, optional callsign directories, safety reports, and external services.</p><span class="page-meta">Effective September 19, 2026 · Privacy Policy URL: /heard/privacy/</span></div></section>
   <section class="prose"><div class="narrow"><div class="prose-card">
     <h2>Overview</h2>
     <p>Heard is an amateur-radio APRS application developed by Dan Tilsley. This policy explains what information Heard uses, where it is processed, and the choices available to you.</p>
@@ -53,6 +53,12 @@
     <ul><li>Directory downloads occur only when you choose to install or update a provider.</li><li>After installation, supported lookups are performed locally on your device.</li><li>Heard stores a local copy of the directory fields used by the app, such as callsign, name, entity type, city, province or state, qualification, and source date.</li><li>Record counts, source dates, and storage use are shown in the app when available.</li><li>You can remove an installed directory from Heard’s Settings.</li></ul>
     <p>FCC and ISED records are public licensing or registration records. They may be incomplete, delayed, or different from a station’s current operating location.</p>
 
+    <h2>Safety reports and blocks</h2>
+    <p>When you report content or block a station, Heard sends the reported station’s callsign, the action and reason, selected content when available, any details you enter, the app version, and a random report identifier. A callsign is not proof of a person’s identity. Avoid including sensitive personal information.</p>
+    <p>Reports are sent over HTTPS to a service operated for Dan Tilsley on Cloudflare, stored for review, and forwarded to the Heard support inbox at <a href="mailto:heardaprs@gmail.com">heardaprs@gmail.com</a>. They are used to investigate abuse and enforce Heard’s <a href="../terms/">Terms of Use</a>, not for advertising or tracking. Reports are not transmitted over APRS.</p>
+    <p>Heard does not automatically attach your APRS passcode, device location, complete packet history, or contact details to a report. Text you choose to include may identify you or another person. Network providers process connection information, including your IP address, to deliver and protect the service; the report database does not store your IP address.</p>
+    <p>Pending reports and block notifications remain on your device until the service receives them. Failed submissions may remain marked as requiring attention. Your local block list is stored on your device. Unblocking does not cancel a notification already created or restore discarded history. Reviewed suppression rules are cached on your device, and suppressed callsigns are available through Heard’s public safety-rules service. Report text and reasons are not included in that public list.</p>
+
     <h2>External services</h2>
     <h3>QRZ</h3>
     <p>When you tap a QRZ link, Heard opens the QRZ website in an in-app browser. QRZ may receive your IP address and browser information and may set cookies according to its own privacy practices. Dan Tilsley does not provide QRZ with a separate profile about you.</p>
@@ -68,6 +74,9 @@
     <h2>Data retention and deletion</h2>
     <p>Most Heard data is stored locally. Removing an optional directory deletes that provider’s local directory data. Deleting Heard removes its local app data from the device, subject to Apple-managed device backups, Keychain behavior, and platform rules.</p>
 
+    <p>Resolved reports whose email notification has been accepted by the email provider are deleted from the reporting database during scheduled maintenance once they are more than 30 days old. Unresolved reports and undelivered notifications remain while being handled. Support-email copies are retained separately for support and enforcement and are not covered by that automatic database deletion.</p>
+    <p>Deleting the app does not delete reports already received by the service or information sent to APRS. For report-retention or deletion requests, email <a href="mailto:heardaprs@gmail.com">heardaprs@gmail.com</a> and include the report ID if available. Heard cannot remove records held independently by other APRS participants.</p>
+
     <h2>Children</h2>
     <p>Heard is intended for general amateur-radio use and is not directed specifically to children. APRS users should avoid transmitting sensitive personal information over the public network.</p>
 
@@ -78,7 +87,7 @@
     <p>Current support information is available on the <a href="../support/">Heard support page</a>.</p>
   </div></div></section>
 </main>
-<footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="../Assets/icon-512.png" alt=""><div><strong>Heard</strong><span>Thoughtfully built for the amateur radio community.</span></div></div><div class="footer-links"><a href="../../">All Apps</a><a href="../privacy/">Privacy</a><a href="../support/">Support</a><a href="../data-sources/">Data Sources</a></div><div class="footer-note">© <span data-year>2026</span> Dan Tilsley. Heard is not affiliated with or endorsed by APRS-IS, the FCC, ISED, QRZ, or Apple. Amateur radio and APRS data may be publicly transmitted and received.</div></div></footer>
+<footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="../Assets/icon-512.png" alt=""><div><strong>Heard</strong><span>Thoughtfully built for the amateur radio community.</span></div></div><div class="footer-links"><a href="../../">All Apps</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms of Use</a><a href="../support/">Support</a><a href="../data-sources/">Data Sources</a></div><div class="footer-note">© <span data-year>2026</span> Dan Tilsley. Heard is not affiliated with or endorsed by APRS-IS, the FCC, ISED, QRZ, or Apple. Amateur radio and APRS data may be publicly transmitted and received.</div></div></footer>
 <script src="../js/main.js" defer></script>
 </body>
 </html>
