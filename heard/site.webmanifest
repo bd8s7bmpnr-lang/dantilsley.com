@@ -1,7 +1,7 @@
 {
   "name": "Heard - APRS, made clear.",
   "short_name": "Heard",
-  "description": "Live APRS maps, station tracking, callsign details, and optional local directories for iPhone and iPad.",
+  "description": "Live APRS maps and callsign details for iPhone and iPad. Also available as Designed for iPad on Apple silicon Macs and Apple Vision Pro.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
