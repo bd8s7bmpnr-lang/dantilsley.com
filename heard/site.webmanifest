@@ -1,7 +1,7 @@
 {
   "name": "Heard - APRS, made clear.",
   "short_name": "Heard",
-  "description": "Live APRS maps, station tracking, callsign details, and optional local directories for iPhone.",
+  "description": "Live APRS maps, station tracking, callsign details, and optional local directories for iPhone and iPad.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

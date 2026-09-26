@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Support — Heard APRS App</title>
-  <meta name="description" content="Support and troubleshooting for Heard, the iPhone APRS app by Dan Tilsley.">
+  <meta name="description" content="Support and troubleshooting for Heard, the iPhone and iPad APRS app by Dan Tilsley.">
   <meta name="theme-color" content="#050916">
   <meta name="color-scheme" content="dark">
   <meta name="robots" content="index, follow">
@@ -25,15 +25,15 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="../"><img src="../Assets/icon-512.png" alt=""><span>Heard<small>APRS, made clear.</small></span></a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation">☰</button><div class="nav-links" id="main-navigation"><a href="../../">All Apps</a><a href="../#features">Features</a><a href="../#screenshots">Screenshots</a><a href="../support/" aria-current="page">Support</a><a href="../privacy/">Privacy</a><a href="../data-sources/">Data Sources</a><a class="nav-cta" href="../#download">App Store</a></div></nav></header>
+<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="../"><img src="../Assets/icon-512.png" alt=""><span>Heard<small>APRS, made clear.</small></span></a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation">☰</button><div class="nav-links" id="main-navigation"><a href="../../">All Apps</a><a href="../#features">Features</a><a href="../#screenshots">Screenshots</a><a href="../support/" aria-current="page">Support</a><a href="../privacy/">Privacy</a><a href="../data-sources/">Data Sources</a><a class="nav-cta" href="https://apps.apple.com/app/heard/id6796892968">App Store</a></div></nav></header>
 <main id="main">
-  <section class="page-hero"><div class="narrow"><p class="eyebrow">Heard for iPhone</p><h1>Support</h1><p>Practical help for setup, APRS-IS connections, listening areas, callsign directories, QRZ lookup, mapping, and station tracking.</p><span class="page-meta">Support URL: /heard/support/</span></div></section>
+  <section class="page-hero"><div class="narrow"><p class="eyebrow">Heard for iPhone and iPad</p><h1>Support</h1><p>Practical help for setup, APRS-IS connections, listening areas, callsign directories, QRZ lookup, mapping, and station tracking.</p><span class="page-meta">Support URL: /heard/support/</span></div></section>
   <section class="prose"><div class="narrow"><div class="prose-card">
     <h2>Help with Heard</h2>
     <p>For setup help, questions, or bug reports, email <a href="mailto:heardaprs@gmail.com">heardaprs@gmail.com</a>.</p>
     <p>The guidance below covers the most common setup and troubleshooting questions.</p>
     <div class="support-grid">
-      <div class="support-card"><h3>Setup help</h3><p>Include the Heard app version, iPhone model, iOS version, your general listening area, and whether you are using device location or a manually selected area.</p></div>
+      <div class="support-card"><h3>Setup help</h3><p>Include the Heard app version, iPhone or iPad model, iOS or iPadOS version, your general listening area, and whether you are using device location or a manually selected area.</p></div>
       <div class="support-card"><h3>Bug reports</h3><p>When reporting a bug, include what you expected, what happened instead, whether the issue repeats, and any useful screenshots or screen recordings. Avoid including information you consider sensitive.</p></div>
     </div>
     <h2>Common troubleshooting</h2>
@@ -42,7 +42,9 @@
       <details><summary>Listening area: do I have to share my location?</summary><p>No. Location is optional. It provides the fastest way to create a nearby listening area and recenter the map, but you can choose a different area manually and adjust the radius.</p></details>
       <details><summary>APRS-IS connection: why am I not seeing stations?</summary><p>Confirm that Home says Listening, verify the listening area and radius, and allow time for APRS activity to arrive. Some areas are naturally quieter than others. Connection Details can show whether packets are arriving.</p></details>
       <details><summary>APRS-IS connection: what if the app cannot connect?</summary><p>Check network access, temporarily try a different network, and review any message shown in Connection Details. APRS-IS is an external community-operated system, so server availability and routing can vary.</p></details>
-      <details><summary>Callsign directories: why did a directory fail to download?</summary><p>FCC and ISED directory files are hosted by their source providers. Temporary outages, slow connections, interrupted downloads, or limited device storage can prevent installation. You can retry from Settings.</p></details>
+      <details><summary>Callsign directories: what changed in version 1.1.1?</summary><p>Version 1.1.1 reduces memory use during United States directory installation, improves archive extraction and error handling, and refreshes the selected station’s details automatically when installation finishes. Matching directory information should appear without switching stations.</p></details>
+      <details><summary>Callsign directories: why did a directory fail to download?</summary><p>FCC and ISED directory files are hosted by their source providers. Temporary outages, slow connections, interrupted downloads, or limited device storage can prevent installation. Update to the latest Heard release and retry from Settings → Callsign Directories → the affected country. The United States directory is a large download and also needs temporary space during installation. If a refresh fails or is cancelled, an existing installed directory is kept.</p></details>
+      <details><summary>Callsign directories: why are some station details missing?</summary><p>Install the directory for the station’s country and wait for installation to finish. Details refresh automatically for the selected station when a matching record is available. Not every APRS station, object, or item has a matching licence record, and source data can be incomplete or out of date.</p></details>
       <details><summary>Callsign directories: is the directory address a live location?</summary><p>No. A directory record is licence or registration information. The live map position comes from APRS packets and may be very different from the registration city, state, province, or postal area.</p></details>
       <details><summary>QRZ lookup: why does QRZ open a separate page?</summary><p>QRZ is an external service. Heard opens QRZ only when you choose that action, and QRZ controls its own account requirements, content, cookies, and availability.</p></details>
       <details><summary>Tracking: does Heard track the person using a station?</summary><p>No. Heard displays APRS position reports associated with a callsign or station identifier. It does not know who is physically carrying or operating a station.</p></details>
@@ -50,10 +52,11 @@
       <details><summary>Directories: how do I remove local callsign data?</summary><p>Open Settings, choose Callsign Directories, select the installed country, and use Remove Directory. Other installed countries remain available.</p></details>
     </div>
     <h2>Availability</h2>
+    <p>Heard is available free on the <a href="https://apps.apple.com/app/heard/id6796892968">App Store</a> for iPhone and iPad running iOS 17 or iPadOS 17 or later.</p>
     <p>Heard depends on internet access, APRS-IS, directory source providers, Apple Maps, QRZ when opened by the user, and other platform services. Dan Tilsley cannot guarantee uninterrupted access to those services, but Heard is designed to fail clearly and preserve normal app use when optional services are unavailable.</p>
   </div></div></section>
 </main>
-<footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="../Assets/icon-512.png" alt=""><div><strong>Heard</strong><span>Thoughtfully built for the amateur radio community.</span></div></div><div class="footer-links"><a href="../../">All Apps</a><a href="../privacy/">Privacy</a><a href="../support/">Support</a><a href="../data-sources/">Data Sources</a></div><div class="footer-note">© <span data-year>2026</span> Dan Tilsley. Heard is not affiliated with or endorsed by APRS-IS, the FCC, ISED, QRZ, or Apple. Amateur radio and APRS data may be publicly transmitted and received.</div></div></footer>
+<footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="../Assets/icon-512.png" alt=""><div><strong>Heard</strong><span>Thoughtfully built for the amateur radio community.</span></div></div><div class="footer-links"><a href="../../">All Apps</a><a href="../privacy/">Privacy</a><a href="../support/">Support</a><a href="../terms/">Terms of Use</a><a href="../data-sources/">Data Sources</a></div><div class="footer-note">© <span data-year>2026</span> Dan Tilsley. Heard is not affiliated with or endorsed by APRS-IS, the FCC, ISED, QRZ, or Apple. Amateur radio and APRS data may be publicly transmitted and received.</div></div></footer>
 <script src="../js/main.js" defer></script>
 </body>
 </html>

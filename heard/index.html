@@ -4,14 +4,14 @@
   <script>document.documentElement.classList.add('js')</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Heard — APRS, made clear for iPhone</title>
-  <meta name="description" content="Heard is a modern iPhone app for exploring live APRS activity, understanding stations, following movement, and looking up callsigns with optional local FCC and ISED directories.">
+  <title>Heard — APRS, made clear for iPhone and iPad</title>
+  <meta name="description" content="Heard is a modern iPhone and iPad app for exploring live APRS activity, understanding stations, following movement, and looking up callsigns with optional local FCC and ISED directories.">
   <link rel="preload" as="image" href="./Assets/renders/hero-devices.svg" fetchpriority="high">
   <meta name="theme-color" content="#050916">
   <meta name="color-scheme" content="dark">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Heard — APRS, made clear.">
-  <meta property="og:description" content="Explore live APRS activity, understand stations, follow movement, and look up callsigns with optional local directories for iPhone.">
+  <meta property="og:description" content="Explore live APRS activity, understand stations, follow movement, and look up callsigns with optional local directories for iPhone and iPad.">
   <meta property="og:url" content="https://dantilsley.com/heard/">
   <meta property="og:image" content="https://dantilsley.com/heard/Assets/og-heard.jpg">
   <meta property="og:type" content="website">
@@ -22,9 +22,9 @@
   <link rel="icon" href="./Assets/favicon-32.png">
   <link rel="apple-touch-icon" href="./Assets/apple-touch-icon.png">
   <link rel="manifest" href="./site.webmanifest">
-  <link rel="stylesheet" href="./css/main.css?v=20260913-tagline">
+  <link rel="stylesheet" href="./css/main.css?v=20260926-launch">
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Heard","url":"https://dantilsley.com/heard/","image":"https://dantilsley.com/heard/Assets/og-heard.jpg","applicationCategory":"UtilitiesApplication","operatingSystem":"iOS 17 or later","description":"A modern iPhone app for exploring live APRS activity, understanding stations, following movement, and looking up callsigns with optional local FCC and ISED directories.","author":{"@type":"Person","name":"Dan Tilsley"},"offers":{"@type":"Offer","availability":"https://schema.org/PreOrder","price":"0","priceCurrency":"USD"},"keywords":"APRS, amateur radio, APRS tracking, callsign lookup, APRS-IS"}
+    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Heard","url":"https://dantilsley.com/heard/","image":"https://dantilsley.com/heard/Assets/og-heard.jpg","applicationCategory":"UtilitiesApplication","operatingSystem":"iOS 17 or later, iPadOS 17 or later","downloadUrl":"https://apps.apple.com/app/heard/id6796892968","description":"A modern iPhone and iPad app for exploring live APRS activity, understanding stations, following movement, and looking up callsigns with optional local FCC and ISED directories.","author":{"@type":"Person","name":"Dan Tilsley"},"offers":{"@type":"Offer","url":"https://apps.apple.com/app/heard/id6796892968","availability":"https://schema.org/InStock","price":"0","priceCurrency":"USD"},"keywords":"APRS, amateur radio, APRS tracking, callsign lookup, APRS-IS"}
   </script>
 </head>
 <body>
@@ -40,7 +40,7 @@
       <a href="./support/">Support</a>
       <a href="./privacy/">Privacy</a>
       <a href="./data-sources/">Data Sources</a>
-      <a class="nav-cta" href="#download">App Store</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/heard/id6796892968">App Store</a>
     </div>
   </nav>
 </header>
@@ -49,11 +49,11 @@
     <div class="container hero-grid">
       <div class="hero-copy reveal">
         <div class="hero-brand"><img src="./Assets/icon-512.png" alt="Heard app icon" width="180" height="180"><div><strong>Heard</strong>APRS, made clear.</div></div>
-        <p class="eyebrow">Modern APRS exploration for iPhone</p>
+        <p class="eyebrow">Modern APRS exploration for iPhone and iPad</p>
         <h1 class="display gradient-text">APRS,<br><span class="headline-nowrap">made clear.</span></h1>
         <p class="section-lede">See live amateur radio activity on a clear map, understand the stations you discover, and follow movement as new APRS reports arrive.</p>
-        <div class="button-row"><a class="button primary app-store-placeholder" href="#download" aria-label="Heard is coming soon to the App Store"><span class="app-store-label"><span class="app-store-kicker">Coming soon on the</span><span class="app-store-title">App Store</span></span></a><a class="button secondary" href="#features">Explore Heard</a></div>
-        <p class="hero-note">Receive-only by default. Optional sending features only when configured.</p>
+        <div class="button-row"><a class="button primary app-store-download" href="https://apps.apple.com/app/heard/id6796892968" aria-label="Download Heard on the App Store"><span class="app-store-label"><span class="app-store-kicker">Download on the</span><span class="app-store-title">App Store</span></span></a><a class="button secondary" href="#features">Explore Heard</a></div>
+        <p class="hero-note">Receive-only by default. APRS messaging is optional and requires configuration.</p>
       </div>
       <div class="phone-stage reveal" aria-label="Heard app screens">
         <div class="phone-glow"></div>
@@ -72,14 +72,14 @@
   <section class="section" id="features"><div class="container">
     <div class="section-head reveal"><p class="eyebrow">Explore, understand, discover, follow</p><h2 class="section-title">A living map of amateur radio activity.</h2><p class="section-lede">Heard turns APRS packets into a clear view of the stations, movement, identities, and local activity happening around you.</p></div>
     <div class="feature-row">
-      <div class="feature-copy reveal"><span class="kicker">EXPLORE</span><h3>See the network around you.</h3><p>Start with a rich, interactive Apple map populated by station-aware symbols. Sort recent activity, browse a clear station list, and move naturally between the map and the details below.</p><ul class="feature-list"><li>Station categories and recognizable symbols</li><li>Freshness, distance, and nearby-place context</li><li>Satellite, standard, and terrain map styles</li></ul></div>
+      <div class="feature-copy reveal"><span class="kicker">EXPLORE</span><h3>See the network around you.</h3><p>Start with a rich, interactive Apple map populated by station-aware symbols. Sort recent activity, browse a clear station list, and move naturally between the map and station details. On iPad, view the map and station list or details side by side in wider layouts.</p><ul class="feature-list"><li>Station categories and recognizable symbols</li><li>Freshness, distance, and nearby-place context</li><li>Standard, Satellite, and Hybrid map styles</li></ul></div>
       <div class="device-card reveal"><img class="feature-device-render" src="./Assets/renders/map-live-device.svg" alt="Live APRS activity on the Heard map" width="560" height="1060" loading="lazy" decoding="async"></div>
     </div>
   </div></section>
 
   <section class="section"><div class="container"><div class="feature-row reverse">
     <div class="device-card reveal"><img class="feature-device-render" src="./Assets/renders/station-detail-device.svg" alt="Heard station details with APRS report information" width="560" height="1060" loading="lazy" decoding="async"></div>
-    <div class="feature-copy reveal"><span class="kicker">UNDERSTAND</span><h3>Know what you are seeing.</h3><p>Open a station to see what was heard, when it was heard, and the useful information carried in its APRS report. Heard keeps technical details available while making the common questions easy to answer.</p><ul class="feature-list"><li>Station type, symbol, freshness, and packet context</li><li>Speed, course, altitude, status, and technical details</li><li>Nearby place and distance context when available</li></ul></div>
+    <div class="feature-copy reveal"><span class="kicker">UNDERSTAND</span><h3>Know what you are seeing.</h3><p>Open a station to see what was heard, when it was heard, and the useful information carried in its APRS report. Heard keeps raw packets and technical information in an expandable Technical Details section while making the common questions easy to answer.</p><ul class="feature-list"><li>Station type, symbol, freshness, and packet context</li><li>Speed, course, altitude, status, and technical details</li><li>Weather reports and telemetry readings when supplied by stations</li><li>Nearby place and distance context when available</li></ul></div>
   </div></div></section>
 
   <section class="section"><div class="container"><div class="feature-row">
@@ -97,20 +97,20 @@
     <div class="feature-cards">
       <article class="feature-card reveal"><div class="feature-icon" aria-hidden="true">⌁</div><h3>Listening area</h3><p>Use your current location or choose another area manually, with the radius kept visible and easy to change.</p></article>
       <article class="feature-card reveal"><div class="feature-icon" aria-hidden="true">⌕</div><h3>Callsign search</h3><p>Search stations already heard and, when a directory is installed, find records that have not appeared live yet.</p></article>
-      <article class="feature-card reveal"><div class="feature-icon" aria-hidden="true">↗</div><h3>Optional sending</h3><p>Sending-related features are available only when you deliberately configure them. Heard starts as a receive-only APRS listener.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon" aria-hidden="true">↗</div><h3>APRS messaging</h3><p>Send and receive APRS messages in conversation-style threads after configuring messaging. Heard starts as a receive-only listener; APRS messages are public.</p></article>
       <article class="feature-card reveal"><div class="feature-icon" aria-hidden="true">◎</div><h3>Session status</h3><p>See the last station, last packet, packet count, station count, and connected duration at a glance.</p></article>
       <article class="feature-card reveal"><div class="feature-icon" aria-hidden="true">◫</div><h3>Diagnostics</h3><p>Raw packet details and connection information remain available without overwhelming the primary experience.</p></article>
-      <article class="feature-card reveal"><div class="feature-icon" aria-hidden="true">◉</div><h3>Made for iPhone</h3><p>Dark, tactile, and built with native Apple frameworks, accessibility support, and reduced-motion awareness.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon" aria-hidden="true">◉</div><h3>Made for iPhone and iPad</h3><p>Native layouts adapt to iPad rotation and window resizing, with the map and station details side by side when space allows.</p></article>
     </div>
   </div></section>
 
   <section class="section"><div class="container"><div class="privacy-panel reveal">
     <div><p class="eyebrow">Privacy in plain language</p><h2 class="section-title">Your listening setup stays yours.</h2><p class="section-lede">Location access is optional. Directory records are queried locally after download. Heard does not include advertising or third-party tracking SDKs.</p><div class="button-row"><a class="button secondary" href="./privacy/">Read the privacy policy</a></div></div>
-    <div class="privacy-points"><div class="privacy-point"><strong>Optional location</strong><span>Used to create your listening area and position the map.</span></div><div class="privacy-point"><strong>Local preferences</strong><span>Your callsign, filters, and app settings stay on your device.</span></div><div class="privacy-point"><strong>Local directory lookup</strong><span>Installed FCC and ISED records are searched on-device.</span></div><div class="privacy-point"><strong>Public radio network</strong><span>APRS traffic itself may be publicly transmitted and relayed.</span></div></div>
+    <div class="privacy-points"><div class="privacy-point"><strong>Optional location</strong><span>Used to create your listening area and position the map.</span></div><div class="privacy-point"><strong>Local preferences</strong><span>Preferences are saved on your device. Your connection identity and listening-area filter are sent to APRS-IS.</span></div><div class="privacy-point"><strong>Local directory lookup</strong><span>Installed FCC and ISED records are searched on-device.</span></div><div class="privacy-point"><strong>Public radio network</strong><span>APRS traffic itself may be publicly transmitted and relayed.</span></div></div>
   </div></div></section>
 
   <section class="section" id="screenshots"><div class="container">
-    <div class="section-head reveal"><p class="eyebrow">Real screens from Heard</p><h2 class="section-title">Built to feel at home on iPhone.</h2><p class="section-lede">Explore Heard’s map, station details, callsign directories, tracking tools, and settings.</p></div>
+    <div class="section-head reveal"><p class="eyebrow">Real screens from Heard</p><h2 class="section-title">Explore Heard on iPhone.</h2><p class="section-lede">These iPhone screens show Heard’s map, station details, callsign directories, tracking tools, and settings. Heard also includes native iPad layouts.</p></div>
     <div class="gallery reveal">
       <button type="button" data-full="./Assets/screenshots/home.webp" aria-label="Enlarge listening dashboard screenshot"><img src="./Assets/screenshots/home.webp" alt="Listening dashboard" width="1320" height="2868" loading="lazy" decoding="async"></button>
       <button type="button" data-full="./Assets/screenshots/map-live.webp" aria-label="Enlarge live map screenshot"><img src="./Assets/screenshots/map-live.webp" alt="Live map and station list" width="1320" height="2868" loading="lazy" decoding="async"></button>
@@ -124,15 +124,15 @@
   <section class="section" id="download"><div class="container"><div class="cta reveal">
     <p class="eyebrow">App Store release</p>
     <h2 class="section-title">The APRS network, made clear.</h2>
-    <p class="section-lede">Heard is preparing for its first public release on iPhone. The official App Store link will appear here when the app is approved.</p>
-    <div class="button-row"><span class="button primary app-store-placeholder app-store-status" role="status" aria-label="Heard is coming soon to the App Store"><span class="app-store-label"><span class="app-store-kicker">Coming soon on the</span><span class="app-store-title">App Store</span></span></span><a class="button secondary" href="./support/">Support</a><a class="button secondary" href="./privacy/">Privacy Policy</a></div>
+    <p class="section-lede">Heard is available now for iPhone and iPad. Download it free from the App Store. Requires iOS 17 or iPadOS 17 or later.</p>
+    <div class="button-row"><a class="button primary app-store-download" href="https://apps.apple.com/app/heard/id6796892968" aria-label="Download Heard on the App Store"><span class="app-store-label"><span class="app-store-kicker">Download on the</span><span class="app-store-title">App Store</span></span></a><a class="button secondary" href="./support/">Support</a><a class="button secondary" href="./privacy/">Privacy Policy</a></div>
   </div></div></section>
 </main>
 <dialog id="screenshot-dialog" aria-label="Enlarged Heard screenshot"><button class="dialog-close" type="button" aria-label="Close screenshot">×</button><img alt=""></dialog>
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand"><img src="./Assets/icon-512.png" alt=""><div><strong>Heard</strong><span>Thoughtfully built for the amateur radio community.</span></div></div>
-    <div class="footer-links"><a href="../">All Apps</a><a href="./privacy/">Privacy</a><a href="./support/">Support</a><a href="./data-sources/">Data Sources</a></div>
+    <div class="footer-links"><a href="../">All Apps</a><a href="./privacy/">Privacy</a><a href="./support/">Support</a><a href="./terms/">Terms of Use</a><a href="./data-sources/">Data Sources</a></div>
     <div class="footer-note">© <span data-year>2026</span> Dan Tilsley. Heard is not affiliated with or endorsed by APRS-IS, the FCC, ISED, QRZ, or Apple. Amateur radio and APRS data may be publicly transmitted and received.</div>
   </div>
 </footer>
