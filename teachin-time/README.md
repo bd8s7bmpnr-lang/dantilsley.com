@@ -8,7 +8,7 @@ The JPEG assets are optimized exports of the Teachin’ Time 3.0 App Store campa
 
 ## Release status
 
-The site presents version 3.0 as coming soon. After its App Store release is confirmed, update the homepage release pill and the release notes beneath the App Store links. School-calendar coverage is qualified; the site does not promise every BC school or future schedule changes.
+The site presents version 3.1 as coming soon. The release preview covers the iPad presentation improvements, full-screen iPhone games, iPhone Duo layouts, and expanded 2026–27 calendars. Build 5 is prepared for submission; do not describe it as released until availability is confirmed. After its App Store release is confirmed, update the homepage release pill and the release notes beneath the App Store links. School-calendar coverage is qualified; the site does not promise every BC school or future schedule changes.
 
 ## Verification
 

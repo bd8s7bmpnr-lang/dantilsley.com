@@ -32,4 +32,4 @@ Opening `index.html` directly works for the homepage, but local routing is more 
 
 GitHub Pages publishes the root of `main` to https://dantilsley.com/.
 
-Teachin’ Time uses its own stylesheet and script under `/teachin-time/`. Serve the repository root for local previews, since its asset and navigation links are root-relative. Version 3.0 is marked as coming soon until its App Store release is confirmed.
+Teachin’ Time uses its own stylesheet and script under `/teachin-time/`. Serve the repository root for local previews, since its asset and navigation links are root-relative. Version 3.1 is marked as coming soon until its App Store release is confirmed.
