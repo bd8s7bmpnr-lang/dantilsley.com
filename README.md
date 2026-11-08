@@ -33,3 +33,7 @@ Opening `index.html` directly works for the homepage, but local routing is more 
 GitHub Pages publishes the root of `main` to https://dantilsley.com/.
 
 Teachin’ Time uses its own stylesheet and script under `/teachin-time/`. Serve the repository root for local previews, since its asset and navigation links are root-relative. Version 3.1 is marked as coming soon until its App Store release is confirmed.
+
+## Heard 1.1.2 website update — November 8, 2026
+
+The Heard page previews the submitted 1.1.2 update and includes the six approved Duo marketing images from the App Store artwork set. Existing branding, iPhone gallery, download links, and platform requirements are preserved. Approval/release has not been confirmed: change the preview/status wording only after confirming public availability.
